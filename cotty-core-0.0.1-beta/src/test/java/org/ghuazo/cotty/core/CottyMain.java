@@ -8,8 +8,6 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.util.log.Logger;
 import org.ghuazo.cotty.core.CottyConstant.CottyStatus;
 import org.ghuazo.cotty.core.CottyDisparcher;
 import org.ghuazo.cotty.core.CottyManager;
@@ -29,14 +27,14 @@ public class CottyMain implements RuntimeListener, LifecysleListener {
 	 * 本框架来源于QQ群 93772282，本框架持续更新中，获取最新版本请加入群 93772282
 	 */
 	
-	private static final Logger logger = Log.getLogger(CottyMain.class);
+	//private static final Logger logger = Log.getLogger(CottyMain.class);
 
 	public CottyDisparcher dis = null ;
 	public static void main(String[] args) throws Exception {
 		CottyMain cottyMain = new CottyMain();
 		cottyMain.dis = new CottyDisparcher(cottyMain,cottyMain);
 		cottyMain.dis.start();
-		cottyMain.dis.join("137336521", "密码", CottyStatus.online);
+		cottyMain.dis.join("ghuazo@qq.com", "jh2dd13+14", CottyStatus.online);
 		
 	}
 

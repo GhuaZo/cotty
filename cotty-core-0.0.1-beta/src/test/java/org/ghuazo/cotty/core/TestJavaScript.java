@@ -3,13 +3,6 @@ package org.ghuazo.cotty.core;
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
-
-import jdk.nashorn.internal.runtime.ConsString;
-
-import org.eclipse.jetty.client.HttpClient;
-import org.eclipse.jetty.client.api.ContentResponse;
-import org.eclipse.jetty.http.HttpMethod;
 
 /**
 QQ登录以后获取好友列表的hash值获取方法，由于此算法经常变，一般2-3周换一次，所以不给大家翻译成java代码java实现采用的java执行javascript代码的方式
