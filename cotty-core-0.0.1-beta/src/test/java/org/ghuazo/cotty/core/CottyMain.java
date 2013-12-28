@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -29,18 +28,18 @@ public class CottyMain implements RuntimeListener, LifecysleListener {
 	
 	//private static final Logger logger = Log.getLogger(CottyMain.class);
 
-	public CottyDisparcher dis = null ;
+	public CottyDisparcher disparcher = null ;
 	public static void main(String[] args) throws Exception {
 		CottyMain cottyMain = new CottyMain();
-		cottyMain.dis = new CottyDisparcher(cottyMain,cottyMain);
-		cottyMain.dis.start();
-		cottyMain.dis.join("ghuazo@qq.com", "jh2dd13+14", CottyStatus.online);
+		cottyMain.disparcher = new CottyDisparcher(cottyMain,cottyMain);
+		cottyMain.disparcher.start();
+		cottyMain.disparcher.join("ghuazo@qq.com", "【密码】", CottyStatus.online);
 		
 	}
 
 	public String onVerify(byte[] verifyImage) {
 		try {
-			java.io.OutputStream out = new FileOutputStream("D:\\"+new Date().getTime()+".png");
+			java.io.OutputStream out = new FileOutputStream("D:\\verify.jpg");
 			out.write(verifyImage);
 			out.close();
 		} catch (FileNotFoundException e) {
