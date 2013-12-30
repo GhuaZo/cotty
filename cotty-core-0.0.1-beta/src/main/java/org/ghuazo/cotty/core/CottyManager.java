@@ -144,7 +144,7 @@ public class CottyManager {
 	public void sendFriendMessage(FriendMessage friendMessage){
 		this.managerCallback.onNeedSend(this,friendMessage);
 	}
-	public void sendFriednMessage(Long UIN,String message){
+	public void sendFriendMessage(Long UIN,String message){
 		FriendMessage friendMessage = new FriendMessage();
 		friendMessage.setUIN(UIN).setContent(message);
 		this.managerCallback.onNeedSend(this,friendMessage);
