@@ -1,4 +1,4 @@
-简单的QQ机器人开发视频
+简单的QQ机器人cotty框架使用实例
 
 QQ：137336521
 
@@ -6,15 +6,10 @@ Email：ghuazo@qq.com
 
 QQ群： 93772282
 
-准备
-	1.2个QQ
-	2.jdk 1.7 或 open jdk1.8
-	3.sts 或 eclipse myeclipse
-	4.cotty项目
-		github.com
-			
-		进群：93772282
-			使用jar包，注意：依赖的jar包也要导入
+视频教程下载地址：
+百度网盘>http://pan.baidu.com/s/1sj8QznR
+
+
 任务：
 	开发环境搭建
 	
