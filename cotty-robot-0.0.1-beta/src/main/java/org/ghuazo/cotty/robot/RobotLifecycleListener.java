@@ -9,10 +9,10 @@ import java.io.OutputStream;
 
 import org.ghuazo.cotty.core.CottyConstant.CottyStatus;
 import org.ghuazo.cotty.core.CottyManager;
-import org.ghuazo.cotty.core.LifecysleListener;
+import org.ghuazo.cotty.core.LifecycleListener;
 
 
-public class RobotLifecysleListener implements LifecysleListener{
+public class RobotLifecycleListener implements LifecycleListener{
 
 	public String onVerify(byte[] verifyImage) {
 		String verifyCode = null ;
