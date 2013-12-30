@@ -49,13 +49,13 @@ public class CottyDisparcher implements ServiceCallback, ManagerCallback {
 
 	private HttpClient httpClient;
 
-	private LifecysleListener lifecycleListener;
+	private LifecycleListener lifecycleListener;
 
 	private RuntimeListener runtimeListener;
 
 	private Map<String, CottyManager> cottyManagerMap;
 
-	public CottyDisparcher(LifecysleListener lifecycleListener,
+	public CottyDisparcher(LifecycleListener lifecycleListener,
 			RuntimeListener runtimeListener) {
 		this.lifecycleListener = lifecycleListener;
 		this.runtimeListener = runtimeListener;
@@ -296,12 +296,12 @@ public class CottyDisparcher implements ServiceCallback, ManagerCallback {
 
 	}
 
-	public LifecysleListener getLifecycleListener() {
+	public LifecycleListener getLifecycleListener() {
 		return lifecycleListener;
 	}
 
 	public CottyDisparcher setLifecycleListener(
-			LifecysleListener lifecycleListener) {
+			LifecycleListener lifecycleListener) {
 		this.lifecycleListener = lifecycleListener;
 		return this;
 	}

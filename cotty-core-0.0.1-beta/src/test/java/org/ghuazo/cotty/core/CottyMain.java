@@ -10,7 +10,7 @@ import java.util.Map;
 import org.ghuazo.cotty.core.CottyConstant.CottyStatus;
 import org.ghuazo.cotty.core.CottyDisparcher;
 import org.ghuazo.cotty.core.CottyManager;
-import org.ghuazo.cotty.core.LifecysleListener;
+import org.ghuazo.cotty.core.LifecycleListener;
 import org.ghuazo.cotty.core.RuntimeListener;
 import org.ghuazo.cotty.core.entity.CottyFriend;
 import org.ghuazo.cotty.core.entity.CottyGroup;
@@ -20,7 +20,7 @@ import org.ghuazo.cotty.core.entity.DiscussMessage;
 import org.ghuazo.cotty.core.entity.FriendMessage;
 import org.ghuazo.cotty.core.entity.GroupMessage;
 
-public class CottyMain implements RuntimeListener, LifecysleListener {
+public class CottyMain implements RuntimeListener, LifecycleListener {
 
 	/**
 	 * 本框架来源于QQ群 93772282，本框架持续更新中，获取最新版本请加入群 93772282

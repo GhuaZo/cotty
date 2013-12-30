@@ -2,7 +2,7 @@ package org.ghuazo.cotty.core;
 
 import org.ghuazo.cotty.core.CottyConstant.CottyStatus;
 
-public interface LifecysleListener {
+public interface LifecycleListener {
 	
 	public String onVerify(byte[] verifyImage);
 	
