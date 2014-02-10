@@ -38,6 +38,8 @@ public class FriendService extends CottyService {
 
 	@Override
 	public void onResponse(CottyResponse cottyResponse) {
+		System.out.println(cottyResponse
+				.getContent());
 		JSONObject jsonObject = JSONObject.parseObject(cottyResponse
 				.getContent());
 		Map<Long, CottyFriend> cottyFriendMap = new HashMap<Long, CottyFriend>();

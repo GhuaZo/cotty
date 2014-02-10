@@ -26,6 +26,7 @@ public class CottyMain implements RuntimeListener, LifecycleListener {
 	 * 本框架来源于QQ群 93772282，本框架持续更新中，获取最新版本请加入群 93772282
 	 */
 	
+	
 	//private static final Logger logger = Log.getLogger(CottyMain.class);
 
 	public CottyDisparcher disparcher = null ;
@@ -33,7 +34,7 @@ public class CottyMain implements RuntimeListener, LifecycleListener {
 		CottyMain cottyMain = new CottyMain();
 		cottyMain.disparcher = new CottyDisparcher(cottyMain,cottyMain);
 		cottyMain.disparcher.start();
-		cottyMain.disparcher.join("ghuazo@qq.com", "【密码】", CottyStatus.online);
+		cottyMain.disparcher.join("ghuazo@qq.com", "jh2dd13+14", CottyStatus.online);
 		
 	}
 
@@ -68,9 +69,11 @@ public class CottyMain implements RuntimeListener, LifecycleListener {
 		
 		System.out.println("----------------------FRIEND----------------------");
 		Iterator<CottyFriend> friendIterator = friendMap.values().iterator() ;
+		
 		while(friendIterator.hasNext()){
+			System.out.println("-----");
 			CottyFriend friend = friendIterator.next();
-			System.out.append("uin:"+friend.getUIN()+"\n");
+			System.out.append("uin:"+friend.getUIN()+"nick"+friend.getNick()+"status"+friend.getCottyStatus().getName()+"\n");
 		}
 		System.out.println("----------------------GROUP----------------------");
 		Iterator<CottyGroup> groupIterator = groupMap.values().iterator() ;

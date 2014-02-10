@@ -18,20 +18,14 @@ import org.ghuazo.cotty.core.entity.CottyFriend;
 import org.ghuazo.cotty.core.entity.CottyGroup;
 import org.ghuazo.cotty.core.entity.CottyMessage;
 import org.ghuazo.cotty.core.entity.DiscussGroup;
-import org.ghuazo.cotty.core.entity.DiscussMessage;
-import org.ghuazo.cotty.core.entity.FriendMessage;
-import org.ghuazo.cotty.core.entity.GroupMessage;
 import org.ghuazo.cotty.core.service.AgreeService;
 import org.ghuazo.cotty.core.service.ApproveService;
 import org.ghuazo.cotty.core.service.AuthoriseService;
 import org.ghuazo.cotty.core.service.CheckService;
 import org.ghuazo.cotty.core.service.CottyService;
 import org.ghuazo.cotty.core.service.CottyService.ServiceCallback;
-import org.ghuazo.cotty.core.service.DiscussMessageService;
 import org.ghuazo.cotty.core.service.DiscussService;
-import org.ghuazo.cotty.core.service.FriendMessageService;
 import org.ghuazo.cotty.core.service.FriendService;
-import org.ghuazo.cotty.core.service.GroupMessageService;
 import org.ghuazo.cotty.core.service.GroupService;
 import org.ghuazo.cotty.core.service.InitializeService;
 import org.ghuazo.cotty.core.service.LoginService;
@@ -98,7 +92,7 @@ public class CottyDisparcher implements ServiceCallback, ManagerCallback {
 				new VerifyService(this.httpClient, cottySession).execute(this);
 			} else {
 				logger.info("不需要验证");
-				logger.info(cottySession.getStringAttribute("verifyCode"));
+				//logger.info(cottySession.getStringAttribute("verifyCode"));
 				new LoginService(this.httpClient, cottySession).execute(this);
 			}
 
